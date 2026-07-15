@@ -20,11 +20,20 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Fredoka One', 'Permanent Marker', 'Poppins', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
   overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Permanent Marker', 'Fredoka One', 'Poppins', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+p, a, li, label, span, button, input, textarea {
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -50,7 +59,20 @@ section {
   font-size: clamp(1.8rem, 3vw, 2.45rem);
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #fff;
+  background: linear-gradient(120deg, #ffd700 0%, #ffb347 40%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.18);
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: 0 4px 30px rgba(255, 215, 0, 0.22);
 }
 
 .section-subtitle {
@@ -453,6 +475,12 @@ section {
   border-radius: 999px;
   padding: 0.55rem 0.85rem;
   transition: all 0.3s ease;
+}
+
+.project-actions a .project-icon {
+  width: 1rem;
+  height: auto;
+  display: inline-block;
 }
 
 .project-actions a:hover {
