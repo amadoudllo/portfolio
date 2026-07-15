@@ -1,120 +1,424 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amadou Diallo | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Icônes (FontAwesome) pour les réseaux sociaux -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Portfolio professionnel de Amadou Diallo, développeur full stack et ingénieur IA."
+    />
 
-    <!-- Barre de navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">AD<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Section Présentation (Hero) -->
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1>Bonjour, je suis <span class="highlight">Amadou Diallo</span></h1>
-            <h2>Développeur Full-Stack & Passionné d'IA</h2>
-            <p>Je conçois des applications web, mobiles et des modèles d'intelligence artificielle pour résoudre des problèmes concrets.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary">Voir mes projets</a>
-                <a href="#contact" class="btn secondary">Me contacter</a>
-            </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-lg">
+        <a class="navbar-brand" href="#home">AMAD<span>TECH</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#home">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </nav>
 
-    <!-- Section À propos -->
-    <section id="about" class="section">
-        <h2 class="section-title">À propos de moi</h2>
-        <div class="about-container">
-            <p>
-                Basé en Guinée (Conakry), je suis un développeur passionné par l'écosystème de la tech et l'évolution de l'Intelligence Artificielle. 
-                De la création de plateformes communautaires au développement de modèles de Deep Learning (CNN), j'aime toucher à tout le cycle de vie d'un projet.
+    <main>
+      <section id="home" class="hero position-relative">
+        <div class="container-lg">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7" data-aos="fade-right">
+              <p class="text-uppercase small text-warning mb-3">Bonjour 👋</p>
+              <h1 class="hero-title">
+                Je suis <span class="accent-text">Amadou Diallo</span>
+              </h1>
+              <h2 class="h4 fw-semibold mb-3">Développeur Full Stack & Ingénieur IA</h2>
+              <p class="hero-subtitle">
+                Je conçois des produits numériques modernes, performants et intelligents, alliant expérience utilisateur, architecture robuste et intelligence artificielle.
+              </p>
+              <div class="hero-badges">
+                <span class="badge-soft">Full Stack</span>
+                <span class="badge-soft">IA & Machine Learning</span>
+                <span class="badge-soft">Design System</span>
+              </div>
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-gold">Voir mes projets</a>
+                <a href="assets/cv.pdf" class="btn btn-outline" download>Télécharger mon CV</a>
+                <a href="#contact" class="btn btn-outline">Me contacter</a>
+              </div>
+            </div>
+            <div class="col-lg-5" data-aos="fade-left">
+              <div class="hero-visual">
+                <div class="avatar-glow"></div>
+                <div class="avatar-card">
+                  <img src="images/hero.svg" alt="Portrait d'Amadou Diallo" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container-lg">
+          <div class="section-heading" data-aos="fade-up">
+            <h2 class="section-title">À propos</h2>
+            <p class="section-subtitle">
+              Je transforme des idées ambitieuses en solutions élégantes, scalables et utiles.
             </p>
+          </div>
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5" data-aos="fade-right">
+              <div class="about-card">
+                <img src="images/about.svg" alt="Travail collaboratif autour d'un projet" class="rounded-4 mb-3" />
+                <p>
+                  Développeur curieux et rigoureux, je travaille à la fois sur l'architecture web, l'expérience utilisateur et l'intégration de l'intelligence artificielle dans des produits concrets.
+                </p>
+                <p>
+                  Mon approche combine performance, esthétique et simplicité pour créer des interfaces modernes et des applications fiables.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="stat-card">
+                    <h3>35+</h3>
+                    <p>Projets réalisés</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="stat-card">
+                    <h3>18</h3>
+                    <p>Clients satisfaits</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="stat-card">
+                    <h3>5+</h3>
+                    <p>Années d'expérience</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="stat-card">
+                    <h3>12</h3>
+                    <p>Technologies maîtrisées</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Section Compétences -->
-    <section id="skills" class="section bg-light">
-        <h2 class="section-title">Mes Compétences</h2>
-        <div class="skills-grid">
-            <div class="skill-card"><h3>IA & Data</h3><p>Python, TensorFlow, CNN, Computer Vision</p></div>
-            <div class="skill-card"><h3>Web Dev</h3><p>PHP, TypeScript, HTML5 / CSS3, JavaScript</p></div>
-            <div class="skill-card"><h3>Mobile</h3><p>Dart, Flutter</p></div>
+      <section id="skills">
+        <div class="container-lg">
+          <div class="section-heading" data-aos="fade-up">
+            <h2 class="section-title">Compétences</h2>
+            <p class="section-subtitle">
+              Un socle technique large pour couvrir le développement front-end, back-end, data et IA.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                <h4>Frontend</h4>
+                <p>HTML5, CSS3, Bootstrap, JavaScript, animations modernes.</p>
+                <div class="progress">
+                  <div class="progress-bar" data-width="95"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fa-brands fa-node-js"></i></div>
+                <h4>Backend</h4>
+                <p>APIs REST, logique métier, sécurité et performance.</p>
+                <div class="progress">
+                  <div class="progress-bar" data-width="90"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                <h4>Base de données</h4>
+                <p>MySQL, PostgreSQL, modélisation et optimisation.</p>
+                <div class="progress">
+                  <div class="progress-bar" data-width="88"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <h4>Mobile</h4>
+                <p>Applications natives et hybrides avec une approche UX soignée.</p>
+                <div class="progress">
+                  <div class="progress-bar" data-width="84"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                <h4>Intelligence Artificielle</h4>
+                <p>Modélisation, NLP, CV et pipelines d'entraînement.</p>
+                <div class="progress">
+                  <div class="progress-bar" data-width="92"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+              <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-cloud"></i></div>
+                <h4>Cloud</h4>
+                <p>Déploiement, conteneurs, CI/CD et infrastructures modernes.</p>
+                <div class="progress">
+                  <div class="progress-bar" data-width="86"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Section Projets -->
-    <section id="projects" class="section">
-        <h2 class="section-title">Projets Récents</h2>
-        <div class="projects-grid">
-            
-            <!-- Projet 1 -->
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Emotion Detection CNN</h3>
-                    <p>Détection d'émotions faciales en comparant un modèle CNN construit "From Scratch" et l'architecture VGG16.</p>
-                    <span class="tech-tag">Python</span> <span class="tech-tag">Deep Learning</span>
-                    <div class="project-links">
-                        <a href="https://github.com/amadoudllo/emotion-detection-cnn" target="_blank"><i class="fab fa-github"></i> Code</a>
+      <section id="services">
+        <div class="container-lg">
+          <div class="section-heading" data-aos="fade-up">
+            <h2 class="section-title">Services</h2>
+            <p class="section-subtitle">
+              Des prestations adaptées aux besoins de chaque projet, du concept à la mise en production.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+              <div class="service-card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h4>Développement web</h4>
+                <p>Interfaces élégantes, rapides et responsive pour des sites et applications modernes.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-card">
+                <i class="fa-solid fa-robot"></i>
+                <h4>Solutions IA</h4>
+                <p>Automatisation, analyse de données et intégration d'algorithmes intelligents.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h4>Optimisation</h4>
+                <p>Amélioration des performances, SEO et expérience utilisateur afin de générer plus de valeur.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-card">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h4>Applications mobiles</h4>
+                <p>Applications fluides, modernes et conçues pour répondre à des usages réels.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h4>Architecture fiable</h4>
+                <p>Structure propre, maintenable et évolutive pour chaque produit livré.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-card">
+                <i class="fa-solid fa-sitemap"></i>
+                <h4>Consulting technique</h4>
+                <p>Accompagnement stratégique sur la stack, la productivité et les choix techniques.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container-lg">
+          <div class="section-heading" data-aos="fade-up">
+            <h2 class="section-title">Projets</h2>
+            <p class="section-subtitle">
+              Quelques réalisations récentes mêlant design, performance et innovation.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="images/project-1.svg" alt="Projet de plateforme web" />
+                  <div class="project-overlay">
+                    <span class="text-white fw-semibold">Plateforme web • 2025</span>
+                  </div>
+                </div>
+                <div class="project-body">
+                  <h4>VibeCampus</h4>
+                  <p>Plateforme communautaire pensée pour améliorer l'engagement et l'accompagnement des étudiants.</p>
+                  <div class="tech-list">
+                    <span class="tech-pill">Bootstrap</span>
+                    <span class="tech-pill">PHP</span>
+                    <span class="tech-pill">MySQL</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="https://github.com/amadoudllo/VibeCampus" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="images/project-2.svg" alt="Projet IA" />
+                  <div class="project-overlay">
+                    <span class="text-white fw-semibold">Vision par ordinateur • 2024</span>
+                  </div>
+                </div>
+                <div class="project-body">
+                  <h4>Emotion Detection CNN</h4>
+                  <p>Détection d'émotions faciales à partir d'un modèle CNN comparé à une architecture VGG16.</p>
+                  <div class="tech-list">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">TensorFlow</span>
+                    <span class="tech-pill">OpenCV</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="https://github.com/amadoudllo/emotion-detection-cnn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="images/project-3.svg" alt="Projet mobile" />
+                  <div class="project-overlay">
+                    <span class="text-white fw-semibold">Application mobile • 2023</span>
+                  </div>
+                </div>
+                <div class="project-body">
+                  <h4>Bloo Flutter</h4>
+                  <p>Application mobile moderne avec une expérience fluide et un design centré sur le besoin utilisateur.</p>
+                  <div class="tech-list">
+                    <span class="tech-pill">Flutter</span>
+                    <span class="tech-pill">Dart</span>
+                    <span class="tech-pill">Firebase</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container-lg">
+          <div class="section-heading" data-aos="fade-up">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">
+              Discutons de votre prochain projet, d'une opportunité ou d'une simple collaboration.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-7" data-aos="fade-right">
+              <div class="contact-card">
+                <form>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="name">Nom</label>
+                      <input class="form-control" id="name" type="text" placeholder="Votre nom" />
                     </div>
-                </div>
-            </div>
-
-            <!-- Projet 2 -->
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>VibeCampus</h3>
-                    <p>Une plateforme web dédiée et pensée pour connecter et accompagner la communauté des étudiants guinéens.</p>
-                    <span class="tech-tag">PHP</span> <span class="tech-tag">Web</span>
-                    <div class="project-links">
-                        <a href="https://github.com/amadoudllo/VibeCampus" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    <div class="col-md-6">
+                      <label class="form-label" for="email">Email</label>
+                      <input class="form-control" id="email" type="email" placeholder="Votre email" />
                     </div>
+                    <div class="col-12">
+                      <label class="form-label" for="subject">Sujet</label>
+                      <input class="form-control" id="subject" type="text" placeholder="Sujet du message" />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="5" placeholder="Écrivez votre message..."></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-gold" type="submit">Envoyer le message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-5" data-aos="fade-left">
+              <div class="contact-card h-100">
+                <h4 class="mb-3">Mes coordonnées</h4>
+                <div class="contact-list">
+                  <div class="contact-item"><i class="fa-solid fa-envelope"></i><span>amadou.diallo.official@gmail.com</span></div>
+                  <div class="contact-item"><i class="fa-solid fa-phone"></i><span>+224 620 00 00 00</span></div>
+                  <div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>Conakry, Guinée</span></div>
+                  <div class="contact-item"><i class="fa-brands fa-github"></i><span>github.com/amadoudllo</span></div>
+                  <div class="contact-item"><i class="fa-brands fa-linkedin"></i><span>linkedin.com/in/amadou-diallo</span></div>
+                  <div class="contact-item"><i class="fa-brands fa-whatsapp"></i><span>+224 620 00 00 00</span></div>
                 </div>
+              </div>
             </div>
-
-            <!-- Projet 3 -->
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Bloo Flutter</h3>
-                    <p>Application mobile moderne développée avec le framework Flutter et le langage Dart.</p>
-                    <span class="tech-tag">Dart</span> <span class="tech-tag">Flutter</span>
-                </div>
-            </div>
-
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Section Contact -->
-    <section id="contact" class="section bg-light">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-container">
-            <p>Un projet, une opportunité ou une simple question ? Écrivez-moi !</p>
-            <a href="mailto:amadou.diallo.official@gmail.com" class="email-link">amadou.diallo.official@gmail.com</a>
-            <div class="social-icons">
-                <a href="https://github.com/amadoudllo" target="_blank"><i class="fab fa-github"></i></a>
-                <!-- Ajoutez votre lien LinkedIn ici -->
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
+    <footer class="footer text-center">
+      <div class="container-lg">
+        <a class="navbar-brand d-inline-block mb-3" href="#home">AMAD<span>TECH</span></a>
+        <div class="socials">
+          <a href="https://github.com/amadoudllo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://wa.me/224620000000" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Amadou Diallo. Tous droits réservés.</p>
+        <p class="mb-0">© 2026 Amadou Diallo. Tous droits réservés.</p>
+      </div>
     </footer>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
